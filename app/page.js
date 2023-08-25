@@ -1,4 +1,3 @@
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -11,10 +10,34 @@ import Image from "next/image";
 import photodp from "../public/photodp.jpg";
 import projectpic from "../public/projectpic.png";
 import portfolio from "../public/portfolio.png";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main className=" bg-white text-black ">
+      <Head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+      </Head>
       <section className=" min-h-screen px-6 bg-gradient-to-b from-white to-gray-200  sm:px-44">
         <nav className=" py-10 mb-8 flex justify-between">
           <h1 className=" text-xl font-burtons items-center flex font-bold">
