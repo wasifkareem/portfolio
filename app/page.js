@@ -10,34 +10,10 @@ import Image from "next/image";
 import photodp from "../public/photodp.jpg";
 import projectpic from "../public/projectpic.png";
 import portfolio from "../public/portfolio.png";
-import Head from "next/head";
 
 export default function Home() {
   return (
     <main className=" bg-white text-black ">
-      <Head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-      </Head>
       <section className=" min-h-screen px-6 bg-gradient-to-b from-white to-gray-200  sm:px-44">
         <nav className=" py-10 mb-8 flex justify-between">
           <h1 className=" text-xl font-burtons items-center flex font-bold">
@@ -57,7 +33,15 @@ export default function Home() {
 
             <p className=" py-5 leading-8 text-left  sm:text-xl text-gray-800 sm:max-w-md ">
               Hey, I am Wasif. I love building scalable and dynamic
-              applications. Proficient in MongoDB, Express, React, and Node.js
+              applications. Proficient in MongoDB, Express, React, and Node.js.
+              I document my learnings on{" "}
+              <a
+                className=" text-teal-500"
+                target="_blank"
+                href="https://twitter.com/Wasif83794508"
+              >
+                Twitter.
+              </a>
             </p>
             <hr className=" h-1.5 bg-teal-600  mb-16 w-28" />
           </div>
@@ -82,12 +66,73 @@ export default function Home() {
 
           <div className="max-w-md  mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:max-w-5xl md:min-h-[22rem]">
             <div className="md:flex">
+              <div className="md:shrink-0 ">
+                <iframe
+                  className="h-48 w-full object-cover md:min-h-[22rem]  md:w-[620px] "
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/lLqI4LwTjxk?si=7NH0IK4FBvrC2Szc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div className=" md:flex md:flex-col  md:justify-between ">
+                <div className="p-8">
+                  <div className="uppercase tracking-wide text-md font-bold">
+                    Social Media App
+                  </div>
+
+                  <p className="mt-2 text-slate-500">
+                    Functional and clean implementation of a Facebook like
+                    social media clone.
+                  </p>
+                </div>
+                <div className="flex gap-4  justify-start px-4 font-semibold py-2">
+                  <a target="_blank" href="https://fabinahut.netlify.app/">
+                    <span className=" bg-red-500 rounded p-1">Live demo</span>
+                  </a>
+
+                  <a
+                    target="_blank"
+                    href="https://github.com/wasifkareem/fabinaHut-MERN"
+                  >
+                    <span className="rounded p-1 bg-slate-900 text-white">
+                      Project Repo
+                    </span>
+                  </a>
+                </div>
+                <div className=" text-3xl flex justify-between gap-2 px-8 py-4 bg-gray-400">
+                  <BiLogoReact color="blue" />
+                  <BiLogoMongodb color="green" />
+                  <SiExpress color="" />
+                  <FaNode />
+                  <SiRedux color="purple" />
+                  <div className=" flex ">
+                    <SiExpress color="" />
+                    <p className=" text-sm  text-green-700 font-semibold ">
+                      multer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-md  mt-20 mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:max-w-5xl md:min-h-[22rem]">
+            <div className="md:flex">
               <div className="md:shrink-0">
-                <Image
-                  className="h-48 w-full object-cover md:min-h-[22rem]  md:w-auto"
-                  src={projectpic}
-                  alt="Modern building architecture"
-                />
+                <iframe
+                  className="h-48 w-full object-cover md:min-h-[22rem]  md:w-[620px] "
+                  width="560"
+                  height="353"
+                  src="https://www.youtube.com/embed/ObcKob7fJHg?si=PPNNrp94tXoICeDA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </div>
               <div className=" md:flex md:flex-col  md:justify-between ">
                 <div className="p-8">
@@ -101,11 +146,14 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex gap-4  justify-start px-4 font-semibold py-2">
-                  <a href="https://fabinatextiles.netlify.app/">
+                  <a target="_blank" href="https://fabinatextiles.netlify.app/">
                     <span className=" bg-red-500 rounded p-1">Live demo</span>
                   </a>
 
-                  <a href="https://github.com/wasifkareem/ecom-fullStack">
+                  <a
+                    target="_blank"
+                    href="https://github.com/wasifkareem/ecom-fullStack"
+                  >
                     <span className="rounded p-1 bg-slate-900 text-white">
                       Project Repo
                     </span>
@@ -148,7 +196,10 @@ export default function Home() {
                     <span className=" bg-red-500 rounded p-1">Live demo</span>
                   </a>
 
-                  <a href="https://github.com/wasifkareem/portfolio">
+                  <a
+                    target="_blank"
+                    href="https://github.com/wasifkareem/portfolio"
+                  >
                     <span className="rounded p-1 bg-slate-900 text-white">
                       Project Repo
                     </span>
@@ -172,13 +223,13 @@ export default function Home() {
         <hr className=" h-1.5 bg-teal-600  mb-16 w-24" />
 
         <div className=" text-5xl flex justify-center gap-16  text-gray-600 py-4">
-          <a href="https://twitter.com/Wasif83794508">
+          <a target="_blank" href="https://twitter.com/Wasif83794508">
             <AiFillTwitterCircle />
           </a>
-          <a href="https://www.linkedin.com/in/wasifseo/">
+          <a target="_blank" href="https://www.linkedin.com/in/wasifseo/">
             <AiFillLinkedin />
           </a>
-          <a href="https://github.com/wasifkareem">
+          <a target="_blank" href="https://github.com/wasifkareem">
             <AiFillGithub />
           </a>
         </div>
