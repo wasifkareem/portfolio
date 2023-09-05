@@ -103,13 +103,13 @@ export default function Home() {
                     </span>
                   </a>
                 </div>
-                <div className=" text-3xl flex justify-between gap-2 px-8 py-4 bg-gray-400">
+                <div className=" text-3xl flex justify-between gap-2 px-4 py-4 bg-gray-400">
                   <BiLogoReact color="blue" />
                   <BiLogoMongodb color="green" />
                   <SiExpress color="" />
                   <FaNode />
                   <SiRedux color="purple" />
-                  <div className=" flex ">
+                  <div className=" flex  ml-2">
                     <SiExpress color="" />
                     <p className=" text-sm  text-green-700 font-semibold ">
                       multer
