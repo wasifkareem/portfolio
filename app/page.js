@@ -20,7 +20,16 @@ export default function Home() {
             Wasif Kareem
           </h1>
           <ul className=" flex items-center">
-            <li className=" bg-gradient-to-r from-cyan-500 to-teal-500 py-2 rounded-md px-4 text-white ml-2">
+            <li className=" sm:mr-4">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1e6az0eo6rdrbFIg53SRHK1vp9llTkLTj/view?usp=sharing"
+              >
+                Resume
+              </a>{" "}
+              <hr className="  mt-1 bg-teal-500 sm:h-1 " />
+            </li>
+            <li className=" bg-gradient-to-r from-cyan-500 to-teal-500 py-2 rounded-md sm:px-4 px-2 text-white ml-2">
               <a href="#project">Projects</a>
             </li>
           </ul>
