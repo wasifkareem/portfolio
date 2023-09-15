@@ -37,7 +37,7 @@ export default function Home() {
           </ul>
         </nav>
         <div className=" sm:flex sm:flex-row justify-between sm:items-center">
-          <div className=" sm:pt-20">
+          <div className=" sm:pt-20 ">
             <h2 className=" text-3xl py-2 font-bold sm:text-5xl text-gray-800">
               About Me
             </h2>
@@ -92,8 +92,8 @@ export default function Home() {
                   </div>
 
                   <p className="mt-2 text-slate-500">
-                    Fully functional Course selling website powered by MERN
-                    stack, Redux & Tailwind.
+                    Publish & Delete Courses. Fully functional Course selling
+                    website powered by MERN stack, Redux & Tailwind.
                   </p>
                 </div>
                 <div className="flex gap-4  justify-start px-4 font-semibold py-2">
@@ -143,8 +143,8 @@ export default function Home() {
                   </div>
 
                   <p className="mt-2 text-slate-500">
-                    Functional and clean implementation of a Facebook like
-                    social media clone.
+                    Create Post and upload images in Real-time. clean
+                    implementation of a Facebook like social media clone.
                   </p>
                 </div>
                 <div className="flex gap-4  justify-start px-4 font-semibold py-2">
@@ -199,8 +199,8 @@ export default function Home() {
                   </div>
 
                   <p className="mt-2 text-slate-500">
-                    fully functional E-commerce app powered by MERN stack and
-                    Redux.
+                    fully functional E-commerce app with multiple filters,
+                    powered by MERN stack and Redux.
                   </p>
                 </div>
                 <div className="flex gap-4  justify-start px-4 font-semibold py-2">
