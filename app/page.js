@@ -145,7 +145,7 @@ export default function Home() {
             <div className="md:flex">
               <div className="md:shrink-0 ">
                 <iframe
-                  className="h-48 w-full object-cover md:min-h-[33rem]  md:w-[790px] "
+                  className="h-48 w-full object-cover md:min-h-full  md:w-[790px] "
                   width="560"
                   height="315"
                   src="https://www.youtube.com/embed/lLqI4LwTjxk?si=7NH0IK4FBvrC2Szc"
