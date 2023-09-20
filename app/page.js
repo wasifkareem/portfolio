@@ -268,7 +268,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="max-w-md  mb-16 sm:mb-0  mx-auto bg-white rounded shadow-xl overflow-hidden md:max-w-7xl md:min-h-[33rem]">
+          <div className="max-w-md   sm:mb-0  mx-auto bg-white rounded shadow-xl overflow-hidden md:max-w-7xl md:min-h-[33rem]">
             <div className="md:flex">
               <div className="md:shrink-0">
                 <Image
