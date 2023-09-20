@@ -24,7 +24,7 @@ export default function Home() {
             <li className=" sm:mr-4 animate-pulse hover:animate-none hover:scale-105 duration-200">
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1e6az0eo6rdrbFIg53SRHK1vp9llTkLTj/view?usp=sharing"
+                href="https://drive.google.com/file/d/1N5QTHFRJQ5RTX_E-KKxduHNMtw5eHgzg/view"
               >
                 Resume
               </a>{" "}
@@ -34,9 +34,10 @@ export default function Home() {
             <li className="  transition-all scale-95 hover:scale-100  hover:bg-gradient-to-r hover:from-purple-500 hover:to-yellow-500 bg-gradient-to-r from-cyan-500 to-teal-500 py-2 rounded-md sm:px-4 px-2 text-white ml-2">
               <a href="#project">Projects</a>
             </li>
+          
           </ul>
         </nav>
-        <div className=" sm:flex sm:flex-row justify-between sm:items-center">
+        <div className=" sm:flex sm:flex-row justify-between sm:items-center ">
           <div className=" sm:pt-20 ">
             <h2 className=" text-3xl py-2 font-bold sm:text-5xl text-gray-800">
               About Me
@@ -75,15 +76,20 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="max-w-md  mt-20 mb-20 mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:max-w-5xl md:min-h-[22rem]">
+          <div className="max-w-md mb-16 sm:mb-32 mx-auto bg-white rounded shadow-xl overflow-hidden md:max-w-7xl md:min-h-[33rem]">
             <div className="md:flex">
               <div className="md:shrink-0">
                 {" "}
-                <Image
-                  className="h-48 w-full object-cover md:min-h-[22rem]  md:w-auto"
-                  src={course}
-                  alt="Modern building architecture"
-                />
+                <iframe
+                  className="h-48 w-full object-cover md:min-h-full  md:w-[790px]"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/K6ymSrhSP6Y?si=cV8SJhM0pYj7eCIg"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </div>
               <div className=" md:flex md:flex-col  md:justify-between ">
                 <div className=" p-8">
@@ -95,38 +101,51 @@ export default function Home() {
                     Publish & Delete Courses. Fully functional Course selling
                     website powered by MERN stack, Redux & Tailwind.
                   </p>
-                </div>
-                <div className="flex gap-4  justify-start px-4 font-semibold py-2">
-                  <a target="_blank" href="https://fabina-school.vercel.app/">
-                    <span className=" bg-red-500 rounded p-1">Live demo</span>
-                  </a>
+                  <ul className=" hidden lg:block text-gray-500  mt-12  leading-10 ">
+                    <li>🖥️Efficient frontend design using React</li>
+                    <li>📝React-Formik for form handling</li>
+                    <li>⚒️Redux for state management</li>
+                    <li>
+                      ⛏️Backend powered by Node.js, Express.js 
+                    </li>
+                    <li>🫙MongoDB as database</li>
 
-                  <a
-                    target="_blank"
-                    href="https://github.com/wasifkareem/Fabina_school"
-                  >
-                    <span className="rounded p-1 bg-slate-900 text-white">
-                      Project Repo
-                    </span>
-                  </a>
+                    <li>🎨Minimalistic design using TailwindCSS</li>
+                  </ul>
                 </div>
-                <div className=" text-3xl flex justify-between gap-2 px-8 py-4 bg-gray-400">
-                  <BiLogoReact color="blue" />
-                  <BiLogoMongodb color="green" />
-                  <SiExpress color="" />
-                  <FaNode />
-                  <SiRedux color="purple" />
-                  <SiTailwindcss color="cyan" />
+                <div className=" sm:flex sm:flex-col">
+                  <div className="flex gap-4  justify-start px-4 font-semibold py-2">
+                    <a target="_blank" href="https://fabina-school.vercel.app/">
+                      <span className=" bg-red-500 rounded p-1">Live demo</span>
+                    </a>
+
+                    <a
+                      target="_blank"
+                      href="https://github.com/wasifkareem/Fabina_school"
+                    >
+                      <span className="rounded p-1 bg-slate-900 text-white">
+                        Source code
+                      </span>
+                    </a>
+                  </div>
+                  <div className=" text-3xl flex justify-between gap-2 px-8 py-4 bg-gray-400">
+                    <BiLogoReact color="blue" />
+                    <BiLogoMongodb color="green" />
+                    <SiExpress color="" />
+                    <FaNode />
+                    <SiRedux color="purple" />
+                    <SiTailwindcss color="cyan" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="max-w-md  mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:max-w-5xl md:min-h-[22rem]">
+          <div className="max-w-md  mb-16 sm:mb-32  mx-auto bg-white rounded shadow-xl overflow-hidden md:max-w-7xl md:min-h-[33rem]">
             <div className="md:flex">
               <div className="md:shrink-0 ">
                 <iframe
-                  className="h-48 w-full object-cover md:min-h-[22rem]  md:w-[620px] "
+                  className="h-48 w-full object-cover md:min-h-[33rem]  md:w-[790px] "
                   width="560"
                   height="315"
                   src="https://www.youtube.com/embed/lLqI4LwTjxk?si=7NH0IK4FBvrC2Szc"
@@ -146,6 +165,17 @@ export default function Home() {
                     Create Post and upload images in Real-time. clean
                     implementation of a Facebook like social media clone.
                   </p>
+                  <ul className=" hidden lg:block text-gray-500  mt-12  leading-10 ">
+                    <li>🖥️Efficient frontend design using React-Redux</li>
+                    <li>📝React-Formik for forms</li>
+                    <li>📷React-Dropzone and Ex-multer for image handling</li>
+                    <li>
+                      ⛏️Backend powered by Node.js, Express.js 
+                    </li>
+                    <li>🫙MongoDB as database</li>
+
+                    <li>🎨Minimalistic design using TailwindCSS</li>
+                  </ul>
                 </div>
                 <div className="flex gap-4  justify-start px-4 font-semibold py-2">
                   <a target="_blank" href="https://fabinahut.netlify.app/">
@@ -157,7 +187,7 @@ export default function Home() {
                     href="https://github.com/wasifkareem/fabinaHut-MERN"
                   >
                     <span className="rounded p-1 bg-slate-900 text-white">
-                      Project Repo
+                      Source code
                     </span>
                   </a>
                 </div>
@@ -178,11 +208,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="max-w-md  mt-20 mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:max-w-5xl md:min-h-[22rem]">
+          <div className="max-w-md   mb-16 sm:mb-32 mx-auto bg-white rounded shadow-xl overflow-hidden md:max-w-7xl md:min-h-[33rem]">
             <div className="md:flex">
               <div className="md:shrink-0">
                 <iframe
-                  className="h-48 w-full object-cover md:min-h-[22rem]  md:w-[620px] "
+                  className="h-48 w-full object-cover md:min-h-[33rem]  md:w-[790px]  "
                   width="560"
                   height="353"
                   src="https://www.youtube.com/embed/ObcKob7fJHg?si=PPNNrp94tXoICeDA"
@@ -202,6 +232,16 @@ export default function Home() {
                     fully functional E-commerce app with multiple filters,
                     powered by MERN stack and Redux.
                   </p>
+                  <ul className=" hidden lg:block text-gray-500  mt-12  leading-10 ">
+                    <li>🖥️Efficient frontend design using React</li>
+                    <li>⚒️Redux for state management</li>
+                    <li>
+                      ⛏️Backend powered by Node.js, Express.js 
+                    </li>
+                    <li>🫙MongoDB as database</li>
+
+                    <li>🎨Styled Components for UI</li>
+                  </ul>
                 </div>
                 <div className="flex gap-4  justify-start px-4 font-semibold py-2">
                   <a target="_blank" href="https://fabinatextiles.netlify.app/">
@@ -213,7 +253,7 @@ export default function Home() {
                     href="https://github.com/wasifkareem/ecom-fullStack"
                   >
                     <span className="rounded p-1 bg-slate-900 text-white">
-                      Project Repo
+                      Source code
                     </span>
                   </a>
                 </div>
@@ -228,11 +268,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="max-w-md  mt-20 mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:max-w-5xl md:min-h-[22rem]">
+          <div className="max-w-md  mb-16 sm:mb-0  mx-auto bg-white rounded shadow-xl overflow-hidden md:max-w-7xl md:min-h-[33rem]">
             <div className="md:flex">
               <div className="md:shrink-0">
                 <Image
-                  className="h-48 w-full object-cover md:min-h-[22rem]  md:w-auto"
+                  className="h-48 w-full object-cover md:min-h-[33rem]  md:w-[790px] "
                   src={portfolio}
                   alt="Modern building architecture"
                 />
@@ -249,6 +289,8 @@ export default function Home() {
                     Next.js and Tailwind CSS.
                   </p>
                 </div>
+                <div className="">
+
                 <div className="flex gap-4  justify-start px-4 font-semibold py-2">
                   <a href="#">
                     <span className=" bg-red-500 rounded p-1">Live demo</span>
@@ -259,15 +301,18 @@ export default function Home() {
                     href="https://github.com/wasifkareem/portfolio"
                   >
                     <span className="rounded p-1 bg-slate-900 text-white">
-                      Project Repo
+                      Source code
                     </span>
                   </a>
                 </div>
+
                 <div className=" text-3xl flex  gap-12 px-8 py-4 bg-gray-400">
                   <BiLogoReact color="blue" />
                   <SiNextdotjs color="black" />
                   <SiTailwindcss color="cyan" />
                 </div>
+                </div>
+
               </div>
             </div>
           </div>
