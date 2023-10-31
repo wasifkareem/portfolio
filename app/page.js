@@ -24,7 +24,7 @@ export default function Home() {
             <li className=" sm:mr-4 animate-pulse hover:animate-none hover:scale-105 duration-200">
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1N5QTHFRJQ5RTX_E-KKxduHNMtw5eHgzg/view"
+                href="https://drive.google.com/file/d/10GbkYFhdgrqT7_zQQj2bJDwnRwcBgbQW/view?usp=sharing"
               >
                 Resume
               </a>{" "}
@@ -34,7 +34,6 @@ export default function Home() {
             <li className="  transition-all scale-95 hover:scale-100  hover:bg-gradient-to-r hover:from-purple-500 hover:to-yellow-500 bg-gradient-to-r from-cyan-500 to-teal-500 py-2 rounded-md sm:px-4 px-2 text-white ml-2">
               <a href="#project">Projects</a>
             </li>
-          
           </ul>
         </nav>
         <div className=" sm:flex sm:flex-row justify-between sm:items-center ">
@@ -84,7 +83,7 @@ export default function Home() {
                   className="h-48 w-full object-cover md:min-h-full  md:w-[790px]"
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/K6ymSrhSP6Y?si=cV8SJhM0pYj7eCIg"
+                  src="https://www.youtube.com/embed/7hwCuTGAFZ8?si=Utw9PzmNhuzElXBz"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -98,16 +97,14 @@ export default function Home() {
                   </div>
 
                   <p className="mt-2 text-slate-500">
-                    Publish & Delete Courses. Fully functional Course selling
-                    website powered by MERN stack, Redux & Tailwind.
+                    Publish video tutorials seemlessly using reactjs, nodejs and
+                    cloudinary
                   </p>
                   <ul className=" hidden lg:block text-gray-500  mt-12  leading-10 ">
                     <li>🖥️Efficient frontend design using React</li>
                     <li>📝React-Formik for form handling</li>
-                    <li>⚒️Redux for state management</li>
-                    <li>
-                      ⛏️Backend powered by Node.js, Express.js 
-                    </li>
+                    <li>⚒️Cloudinary for media storage</li>
+                    <li>⛏️Backend powered by Node.js, Express.js</li>
                     <li>🫙MongoDB as database</li>
 
                     <li>🎨Minimalistic design using TailwindCSS</li>
@@ -121,7 +118,7 @@ export default function Home() {
 
                     <a
                       target="_blank"
-                      href="https://github.com/wasifkareem/Fabina_school"
+                      href="https://github.com/wasifkareem/CourseSellingApp"
                     >
                       <span className="rounded p-1 bg-slate-900 text-white">
                         Source code
@@ -169,9 +166,7 @@ export default function Home() {
                     <li>🖥️Efficient frontend design using React-Redux</li>
                     <li>📝React-Formik for forms</li>
                     <li>📷React-Dropzone and Ex-multer for image handling</li>
-                    <li>
-                      ⛏️Backend powered by Node.js, Express.js 
-                    </li>
+                    <li>⛏️Backend powered by Node.js, Express.js</li>
                     <li>🫙MongoDB as database</li>
 
                     <li>🎨Minimalistic design using TailwindCSS</li>
@@ -235,9 +230,7 @@ export default function Home() {
                   <ul className=" hidden lg:block text-gray-500  mt-12  leading-10 ">
                     <li>🖥️Efficient frontend design using React</li>
                     <li>⚒️Redux for state management</li>
-                    <li>
-                      ⛏️Backend powered by Node.js, Express.js 
-                    </li>
+                    <li>⛏️Backend powered by Node.js, Express.js</li>
                     <li>🫙MongoDB as database</li>
 
                     <li>🎨Styled Components for UI</li>
@@ -290,29 +283,27 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="">
+                  <div className="flex gap-4  justify-start px-4 font-semibold py-2">
+                    <a href="#">
+                      <span className=" bg-red-500 rounded p-1">Live demo</span>
+                    </a>
 
-                <div className="flex gap-4  justify-start px-4 font-semibold py-2">
-                  <a href="#">
-                    <span className=" bg-red-500 rounded p-1">Live demo</span>
-                  </a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/wasifkareem/portfolio"
+                    >
+                      <span className="rounded p-1 bg-slate-900 text-white">
+                        Source code
+                      </span>
+                    </a>
+                  </div>
 
-                  <a
-                    target="_blank"
-                    href="https://github.com/wasifkareem/portfolio"
-                  >
-                    <span className="rounded p-1 bg-slate-900 text-white">
-                      Source code
-                    </span>
-                  </a>
+                  <div className=" text-3xl flex  gap-12 px-8 py-4 bg-gray-400">
+                    <BiLogoReact color="blue" />
+                    <SiNextdotjs color="black" />
+                    <SiTailwindcss color="cyan" />
+                  </div>
                 </div>
-
-                <div className=" text-3xl flex  gap-12 px-8 py-4 bg-gray-400">
-                  <BiLogoReact color="blue" />
-                  <SiNextdotjs color="black" />
-                  <SiTailwindcss color="cyan" />
-                </div>
-                </div>
-
               </div>
             </div>
           </div>
