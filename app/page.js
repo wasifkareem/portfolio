@@ -22,7 +22,7 @@ export default function Home() {
       content: (
         <div className=" overflow-hidden relative  p-2 md:p-4  flex flex-col  text-sm ">
 
-          <h2 className=" text-lg font-quicksand">Work Experience</h2>
+          <h2 className=" text-lg font-quicksand mb-3">Work Experience</h2>
           <Accordion company={"Pocketworks"} role={"Web & CMS developer"} companyLogo={pw_logo} tenure={"Dec 2024 - May 2025"} skills={"<ul class='custom-disc'><li>Worked with Pocketworks team to build a CMS-driven UI that powers the pocketworks main marketing <a target='_blank' href='https://www.pocketworks.co.uk'>website</a></li><li>Developed a fully editable website where all pages and sections can be managed via the CMS, enabling the marketing team to update content easily and frequently to support their campaigns.</li></ul>"}/>
           <hr className=" mx-1 md:mx-5"/>
           <Accordion company={"Innerloop"} role={"Web developer"} companyLogo={innerloop} tenure={"Jan 2024 - Jul 2024"} skills={"<ul class='custom-disc'><li>Developed a responsive, SEO-optimized landing page for Innerloop using Next.js, React.js, and Bootstrap, creating reusable UI components for various screen sizes.</li><li>Contributed to the Innerloop application by resolving bugs on the login and showcase pages, enhancing overall user experience.</li></ul>"}/>
