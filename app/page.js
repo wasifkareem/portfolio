@@ -81,8 +81,8 @@ const tech=["Javascript", "Reactjs","Nextjs","TailwindCss","Nodejs","Zod","Redux
           <Image src={photodp}
             className="  w-36 rounded-full border-1 border-gray-300 self-center opacity-95 mb-5 "
             />
-            <h1 className=" font-quicksand text-3xl font-semibold  text-center mb-4 text-pri">Hi, I'm Wasif.</h1>
-            <p className=" text-gray-500 font-quicksand text-center">I'm a UI centric full-stack developer. I love building intuitive interfaces and scalable applications</p>
+            <h1 className=" font-quicksand text-3xl font-semibold  text-center mb-4 text-pri">Hi, I&apos;m Wasif.</h1>
+            <p className=" text-gray-500 font-quicksand text-center">I&apos;m a UI centric full-stack developer. I love building intuitive interfaces and scalable applications</p>
             
           </div>
           <div className=" bg-white p-block-padding border border-gray-300  mx-4 md:mx-2">
@@ -94,7 +94,7 @@ const tech=["Javascript", "Reactjs","Nextjs","TailwindCss","Nodejs","Zod","Redux
            </div>
           </div>
           <div className=" bg-white justify-center md:max-w-[320px] p-block-padding border flex  border-gray-300  mx-4 md:mx-2">
-            <p className=" flex flex-wrap gap-2 ">{tech.map((t)=><span className=" bg-gray-200 text-gray-900 px-3 p-1 rounded-md font-quicksand ">{t}</span>)}</p>
+            <p className=" flex flex-wrap gap-2 ">{tech.map((t)=><span key={t} className=" bg-gray-200 text-gray-900 px-3 p-1 rounded-md font-quicksand ">{t}</span>)}</p>
           </div>
           
             </div>
