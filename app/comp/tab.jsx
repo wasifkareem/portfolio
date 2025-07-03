@@ -32,6 +32,7 @@ export const Tabs = ({
         )}>
         {propTabs.map((tab, idx) => (
           <button
+          type="button"
             key={tab.title}
             onClick={() => {
               moveSelectedTabToTop(idx);
@@ -52,7 +53,7 @@ export const Tabs = ({
                 )} />
             )}
 
-            <span className="relative block text-black dark:text-white">
+            <span className="relative block text-base md:text-lg text-black dark:text-white">
               {tab.title}
             </span>
           </button>
@@ -61,7 +62,6 @@ export const Tabs = ({
       <FadeInDiv
         tabs={tabs}
         active={active}
-        key={active.value}
         hovering={hovering}
         className={cn("mt-6", contentClassName)} />
     </>
@@ -94,7 +94,7 @@ export const FadeInDiv = ({
             duration: 0.3,
             ease: "easeInOut"
           }}
-          className={cn("w-full  absolute top-0 left-0  ", className)}>
+          className={cn("w-full  md:absolute top-0 left-0  ", className, {"md:absolute":true,"hidden":!isActive(tab)})}>
           {tab.content}
         </motion.div>
       ))}

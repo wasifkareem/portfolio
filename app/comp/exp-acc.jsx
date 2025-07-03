@@ -12,25 +12,25 @@ export default function Accordian({ company, companyLogo, role, tenure, skills }
   };
 
   return (
-    <div className="max-w-4xl  bg-white">
-      <div className=" border-b border-gray-200 overflow-hidden ">
+    <div className="max-w-4xl  bg-white group">
+      <div className=" border-gray-200 overflow-hidden ">
         {/* Header */}
         <button
           onClick={toggleAccordion}
-          className="w-full flex items-center justify-between px-6 p-4 bg-white transition-colors duration-200  "
+          className="w-full flex items-center justify-between py-4 md:px-6 md:p-4 bg-white transition-colors duration-200  "
         >
           <div className="flex items-center space-x-4">
             {/* Company Logo */}
-            <div className="w-12 h-12 shadow-sm border flex items-center justify-center">
+            <div className="w-12 h-12 shadow-sm border  flex items-center justify-center">
              <Image src={companyLogo}/>
             </div>
             
             {/* Company Info */}
-            <div className="text-left">
-              <div className="flex items-center space-x-2">
-                <h3 className="text-base font-medium text-gray-900">{company}</h3>
+            <div className="text-left ">
+              <div className="flex items-center space-x-2  ">
+                <h3 className="text-base font-medium text-gray-900 group-hover:text-green-700 transition-all">{company}</h3>
                 <ChevronUp 
-                  className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${
+                  className={`w-5 h-5 text-gray-400 group-hover:text-green-700 transition-transform duration-300 ${
                     isOpen ? 'transform rotate-180' : ''
                   }`}
                 />
@@ -40,7 +40,7 @@ export default function Accordian({ company, companyLogo, role, tenure, skills }
           </div>
           
           {/* Date Range */}
-          <div className="text-gray-500 text-sm">
+          <div className="text-gray-500 text-sm  hidden sm:block">
             {tenure}
           </div>
         </button>
@@ -55,14 +55,7 @@ export default function Accordian({ company, companyLogo, role, tenure, skills }
            
             
             {/* Achievement 1 */}
-           { skills.map((skill)=>(
-            <div className="flex space-x-3">
-              <div className="w-2 h-2 bg-gray-200 rounded-full mt-2 flex-shrink-0"></div>
-              <div className="text-gray-700 leading-relaxed">
-               {skill}
-              </div>
-            </div>
-           )) }
+           <div className=" accordion-body font-quicksand text-base" dangerouslySetInnerHTML={{__html: skills}}></div>
 
           </div>
         </div>
@@ -70,3 +63,4 @@ export default function Accordian({ company, companyLogo, role, tenure, skills }
     </div>
   );
 }
+

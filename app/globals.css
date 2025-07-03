@@ -87,3 +87,37 @@ html {
 
 
 
+.accordion-body a{
+  color: #03850b;
+}
+
+.accordion-body a:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.accordion-body ul{
+ list-style: disc;
+}
+
+ul.custom-disc {
+  list-style: none;
+  padding-left: 3.5em;
+  margin-top: 13px;
+}
+
+ul.custom-disc li {
+  position: relative;
+  margin-bottom: 6px;
+}
+
+ul.custom-disc li::before {
+  content: '•';
+  color: rgba(128, 128, 128, 0.64);
+  font-size: 1.5em;
+  position: absolute;
+  left: -1.2em;
+  top: 0;
+  line-height: 1;
+}
+
