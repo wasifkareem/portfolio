@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/project/starbook/(.*)",
+        "destination": "https://starbook2762.vercel.app/$1"
+      }
+    ]
+  }
+  
