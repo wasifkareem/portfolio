@@ -1,38 +1,34 @@
 import AnimatedSection from './AnimatedSection'
 
 const included = [
-  'Full site rebuild on Astro or Next.js',
-  'Sanity CMS with content models tailored to your SaaS',
-  'All existing content migrated — blogs, docs, landing pages',
-  'SEO preserved — 301 redirects, meta, sitemaps, schema',
-  'Your HubSpot/Intercom/analytics integrations reconnected',
-  'Vercel deployment with preview branches & CI/CD',
-  'Mobile-responsive, accessible, WCAG-compliant',
-  'Full CMS training for your marketing team',
-  '2 weeks post-launch support included',
-  '95+ Lighthouse performance score — guaranteed',
+  'Full migration to a headless stack for faster speed to market',
+  'Atomic, modular components so marketing can build pages like LEGO blocks',
+  'Complete decoupling of content and code - unblocking your engineering team',
+  'All existing content, SEO, and tracking integrations (HubSpot/Analytics) fully preserved',
+  'Enterprise-grade security and 95+ Core Web Vitals — guaranteed',
 ]
 
 export default function WhatYouGet() {
   return (
     <section id="pricing" className="py-24 md:py-32 bg-white">
       <div className="max-w-[1450px] mx-auto px-6">
-        <AnimatedSection>
-          <p className="text-sm font-semibold tracking-widest uppercase text-accent mb-4">
-            What's included
-          </p>
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-primary max-w-3xl">
-            Everything your SaaS website needs for{' '}
-            <span className="text-accent">$2,000.</span>
-          </h2>
-          <p className="mt-4 text-lg text-secondary max-w-2xl">
-            No hourly billing. No scope creep. No "oh, that's extra." 
-            One flat price, everything your B2B SaaS site needs to compete.
-          </p>
-        </AnimatedSection>
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <AnimatedSection className="lg:col-span-7 lg:pr-12">
+            <p className="text-sm font-semibold tracking-widest uppercase text-accent mb-4">
+              What's included
+            </p>
+            <h2 className="text-3xl md:text-5xl font-semibold leading-snug md:leading-tight tracking-tight text-primary">
+              Everything your SaaS website needs for{' '}
+              <span className="text-accent">$2,000.</span>
+            </h2>
+            <p className="mt-6 text-lg text-secondary">
+              No hourly billing. No scope creep. No "oh, that's extra." 
+              One flat price, everything your B2B SaaS site needs to compete.
+            </p>
+          </AnimatedSection>
 
-        <AnimatedSection delay={0.2} className="mt-14 md:mt-16">
-          <div className="bg-surface border border-border p-8 md:p-12 max-w-2xl">
+          <AnimatedSection delay={0.2} className="lg:col-span-5">
+            <div className="bg-surface border border-border p-8 md:p-12 w-full shadow-lg">
             <div className="flex items-baseline gap-3 mb-8">
               <span className="text-5xl md:text-6xl font-extrabold text-primary">$2,000</span>
               <span className="text-lg text-secondary font-medium">flat fee</span>
@@ -55,7 +51,8 @@ export default function WhatYouGet() {
               </p>
             </div>
           </div>
-        </AnimatedSection>
+          </AnimatedSection>
+        </div>
       </div>
     </section>
   )

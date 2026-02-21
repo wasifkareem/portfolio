@@ -20,7 +20,7 @@ const cases = [
     what: 'Migrated 10,000+ complex records from Webflow to Sanity + Astro to solve content scaling bottlenecks. Mapped and preserved all legacy slugs and SEO metadata for zero traffic loss, and redesigned their core Slack Integration page.',
     stack: 'Astro + Sanity CMS + Vercel',
     result: 'Zero SEO impact. A lightning-fast content engine capable of handling 10k+ pages without Webflow\'s limits.',
-    url: 'https://drdroid.io',
+    url: 'https://drdroid.io/engineering-tools/error-monitoring-tracking-open-source',
     color: '#9554FF',
     logo: '/drdroid.png',
     video: '/drdroid video.mov',
@@ -53,7 +53,7 @@ export default function CaseStudies() {
                 className="group block relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full"
                 style={{ backgroundColor: c.color }}
               >
-                <div className="grid lg:grid-cols-2 items-center min-h-[500px]">
+                <div className="grid min-[1377px]:grid-cols-2 items-center min-h-[500px]">
                   
                   {/* Left: Content */}
                   <div className="p-8 md:p-12 lg:p-16 relative z-20 flex flex-col justify-center h-full">
@@ -66,7 +66,7 @@ export default function CaseStudies() {
                       <span className="text-xs font-bold tracking-widest uppercase text-white/60 mb-3 block">
                         {c.type}
                       </span>
-                      <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 group-hover:translate-x-2 transition-transform duration-300">
+                      <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 transition-transform duration-300">
                         {c.name}
                       </h3>
                       <p className="text-lg text-white/90 leading-relaxed mb-8 max-w-lg">
@@ -90,14 +90,14 @@ export default function CaseStudies() {
                       </div>
 
                       <div className="flex items-center gap-3 text-white font-bold group-hover:gap-5 transition-all">
-                        View Case Study
+                        View Site
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                       </div>
                     </div>
                   </div>
 
                   {/* Right: Gallery */}
-                  <div className="relative h-full min-h-[400px] lg:min-h-full flex items-center justify-center p-8 lg:p-12">
+                  <div className="hidden min-[1377px]:flex relative h-full min-h-[400px] lg:min-h-full items-center justify-center p-8 lg:p-12">
                     
                     {/* Floating Background Image */}
                     {c.floatingImage && (

@@ -1,7 +1,16 @@
 import { motion } from 'motion/react'
+import { useEffect } from 'react'
+import { getCalApi } from '@calcom/embed-react'
 import TextSwap from './TextSwap'
 
 export default function Hero() {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"30min"});
+      cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, [])
+
   return (
     <section className="min-h-dvh flex items-center pt-24 pb-12 bg-white overflow-hidden">
       <div className="flex justify-center flex-col items-center mx-auto px-6  max-w-[1450px]">
@@ -25,7 +34,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Bottom Row: 2/3 Content + 1/3 Image */}
-        <div className="mt-12 pr-20 pl-5  md:mt-20 grid lg:grid-cols-3 gap-12">
+        <div className="mt-12 md:mt-20 grid lg:grid-cols-3 gap-12 w-full">
           
           {/* Left Column (Bullets & CTA) */}
           <div className="lg:col-span-2">
@@ -38,16 +47,14 @@ export default function Hero() {
                 <li className="flex items-start gap-4">
                   <span className="shrink-0 w-2.5 h-2.5 mt-2.5 rounded-full bg-linear-to-br from-blue-400 to-blue-600 shadow-[0_0_12px_rgba(37,99,235,0.6)]"></span>
                   <p className="text-lg md:text-xl text-secondary leading-relaxed">
-                    Your landing pages are stuck in the engineering backlog. Your marketing team 
-                    is is unable to update content. Your devs are debugging the Site instead of 
-                    shipping product.
+                    Your marketing team is blocked by code. Your devs are stuck maintaining the website instead of building your product. Your monolithic setup is slowing down your growth.
                   </p>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="shrink-0 w-2.5 h-2.5 mt-2.5 rounded-full bg-linear-to-br from-blue-400 to-blue-600 shadow-[0_0_12px_rgba(37,99,235,0.6)]"></span>
                   <p className="text-lg md:text-xl text-primary font-semibold leading-relaxed">
-                    I fix all of that, by migrating your <TextSwap /><br/> 
-                    site to a composable stack your team actually owns.
+                    I fix this by migrating<br className=' sm:hidden'/> your <TextSwap /><br/> 
+                    site to a lightning-fast headless stack your marketing team entirely owns.
                   </p>
                 </li>
               </ul>
@@ -59,13 +66,15 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
               className="mt-10 flex flex-wrap items-center gap-4 text-start"
             >
-              <a
-                href="#contact"
-                className="inline-flex items-center md:ml-5 gap-2 px-8 py-4 bg-primary text-white text-base  hover:bg-accent rounded-full transition-colors"
+              <button
+                data-cal-namespace="30min"
+                data-cal-link="wasifkareem/30min"
+                data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white text-base hover:bg-accent rounded-full transition-colors cursor-pointer"
               >
                 Start Migration
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
+              </button>
              
             </motion.div>
 

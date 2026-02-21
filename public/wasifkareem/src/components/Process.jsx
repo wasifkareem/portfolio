@@ -5,25 +5,25 @@ const steps = [
     number: '01',
     title: 'Audit & Plan',
     duration: 'Kickoff',
-    desc: "We start with a focused call to diagnose site bottlenecks. We'll map out your migration strategy, select the optimal CMS and framework, and build a bulletproof plan to protect your SEO.",
+    desc: "We start with a focused call to diagnose site bottlenecks. We'll map out your migration strategy, select the optimal CMS and framework, and build a rock-solid plan to preserve your SEO and traffic.",
   },
   {
     number: '02',
     title: 'Align & Communicate',
     duration: 'Ongoing',
-    desc: "I operate as a direct extension of your team. By plugging into your Slack, I ensure rapid feedback loops, gather input, and perfectly align the migration with your vision.",
+    desc: "I operate as a direct extension of your team. With a shared Slack channel, we establish rapid feedback loops and gather input from your team to perfectly align the migration with your vision.",
   },
   {
     number: '03',
     title: 'Build & Migrate',
     duration: 'Execution',
-    desc: "Pages move seamlessly to a headless stack without downtime. Every URL stays alive. HubSpot forms, Intercom, and analytics scripts work exactly as before, with better autonomy.",
+    desc: "Pages move seamlessly to a headless stack without a second of downtime. Every URL stays alive. HubSpot forms, Intercom scripts, and analytics work exactly as before, but with total autonomy.",
   },
   {
     number: '04',
     title: 'Launch & Handoff',
     duration: 'Delivery',
-    desc: "After deployment and QA, I train your team on the CMS. By week's end, you'll ship new landing pages without relying on engineering. Plus, I stay on call for 2 weeks post-launch.",
+    desc: "After deployment and rigid QA, I train your team on the CMS. By week's end, you'll ship new landing pages instantly without relying on engineering. Plus, I stay on call for 2 weeks post-launch.",
   },
 ]
 
@@ -35,7 +35,7 @@ export default function Process() {
           <p className="text-sm font-semibold tracking-widest uppercase text-accent mb-4">
             How I work
           </p>
-          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-primary max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-semibold leading-snug md:leading-tight tracking-tight text-primary max-w-3xl">
             Three weeks. Zero disruption to your pipeline.
           </h2>
           <p className="mt-4 text-lg text-secondary max-w-2xl">

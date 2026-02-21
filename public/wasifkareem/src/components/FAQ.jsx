@@ -32,7 +32,7 @@ const faqs = [
     a: "The $2,000 covers most B2B SaaS sites (up to ~50 pages). For larger sites with complex multi-language setups, custom CRM integrations, or gated content systems, I'll give you a custom quote after the audit. Still very competitive vs. agencies charging $50K+.",
   },
   {
-    q: 'How is this so much cheaper than agencies like Webstacks?',
+    q: 'How is this so much cheaper than agencies?',
     a: "No office overhead, no project managers, no account executives. It's just me — a specialized developer who does this every day. You get the same composable stack (Astro + Sanity + Vercel) without the agency markup.",
   },
 ]
@@ -80,7 +80,7 @@ export default function FAQ() {
           <p className="text-sm font-semibold tracking-widest uppercase text-accent mb-4">
             FAQ
           </p>
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-primary max-w-2xl">
+          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-primary max-w-2xl">
             Questions SaaS teams ask me.
           </h2>
         </AnimatedSection>
