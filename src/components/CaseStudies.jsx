@@ -11,7 +11,7 @@ const cases = [
     url: 'https://pocketworks.co.uk',
     color: '#F48220',
     logo: '/pw.png',
-    video: 'https://res.cloudinary.com/domd44kuh/video/upload/v1771750253/pw_snap_khvhmi.mov',
+    video: 'https://res.cloudinary.com/domd44kuh/video/upload/f_auto,q_auto/v1771750253/pw_snap_khvhmi.mov',
     floatingImage: '/image.png',
   },
   {
@@ -23,7 +23,7 @@ const cases = [
     url: 'https://drdroid.io/engineering-tools/error-monitoring-tracking-open-source',
     color: '#9554FF',
     logo: '/drdroid.png',
-    video: 'https://res.cloudinary.com/domd44kuh/video/upload/v1771750250/drdroid_slack_wwshzo.mov',
+    video: 'https://res.cloudinary.com/domd44kuh/video/upload/f_auto,q_auto/v1771750250/drdroid_slack_wwshzo.mov',
     floatingImage: '/drdroidCMS.png',
   },
 ]
@@ -59,7 +59,7 @@ export default function CaseStudies() {
                   <div className="p-8 md:p-12 lg:p-16 relative z-20 flex flex-col justify-center h-full">
                     {/* Logo */}
                     <div className="absolute top-8 left-8 md:top-12 md:left-12 h-12   flex items-center justify-center">
-                      <img src={c.logo} alt={`${c.name} logo`} className="h-full w-auto object-contain rounded-sm" />
+                      <img src={c.logo} alt={`${c.name} logo`} loading="lazy" decoding="async" className="h-full w-auto object-contain rounded-sm" />
                     </div>
 
                     <div className="mt-16">
@@ -111,6 +111,8 @@ export default function CaseStudies() {
                         <img
                           src={c.floatingImage}
                           alt="Background decoration"
+                          loading="lazy"
+                          decoding="async"
                           className="w-full scale-125"
                         />
                       </motion.div>
