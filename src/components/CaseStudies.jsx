@@ -11,7 +11,7 @@ const cases = [
     url: 'https://pocketworks.co.uk',
     color: '#F48220',
     logo: '/pw.png',
-    video: '/pw snap.mov',
+    video: 'https://res.cloudinary.com/domd44kuh/video/upload/v1771750253/pw_snap_khvhmi.mov',
     floatingImage: '/image.png',
   },
   {
@@ -23,7 +23,7 @@ const cases = [
     url: 'https://drdroid.io/engineering-tools/error-monitoring-tracking-open-source',
     color: '#9554FF',
     logo: '/drdroid.png',
-    video: '/drdroid video.mov',
+    video: 'https://res.cloudinary.com/domd44kuh/video/upload/v1771750250/drdroid_slack_wwshzo.mov',
     floatingImage: '/drdroidCMS.png',
   },
 ]
