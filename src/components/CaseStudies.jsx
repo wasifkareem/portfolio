@@ -15,7 +15,7 @@ const cases = [
     floatingImage: '/image.png',
   },
   {
-    name: 'Doctor Droid',
+    name: 'DrDroid(YC23)',
     type: 'AI-Powered Observability SaaS',
     what: 'Migrated 10,000+ complex records from Webflow to Sanity + Astro to solve content scaling bottlenecks. Mapped and preserved all legacy slugs and SEO metadata for zero traffic loss, and redesigned their core Slack Integration page.',
     stack: 'Astro + Sanity CMS + Vercel',
