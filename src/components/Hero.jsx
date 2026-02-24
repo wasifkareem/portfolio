@@ -85,7 +85,7 @@ export default function Hero() {
               className="mt-12 md:mt-16 flex flex-wrap gap-8 md:gap-12"
             >
               {[
-                { value: '$2,000', label: 'Flat fee' },
+                { value: '95+', label: 'Lighthouse Score' },
                 { value: '3 weeks', label: 'Delivery' },
                 { value: 'Zero', label: 'Downtime' },
               ].map((stat, i) => (

@@ -5,7 +5,7 @@ import { getCalApi } from '@calcom/embed-react'
 const navLinks = [
   { label: 'Work', href: '#work' },
   { label: 'Process', href: '#process' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'Deliverables', href: '#deliverables' },
 ]
 
 export default function Navbar() {

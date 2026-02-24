@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'What if we need ongoing support after launch?',
-    a: "2 weeks of post-launch support is included. After that, I offer monthly retainers starting at $800/month — perfect for teams that need continuous landing pages, new integration pages, or conversion optimization.",
+    a: "2 weeks of post-launch support is included. After that, I offer flexible monthly retainers — perfect for teams that need continuous landing pages, new integration pages, or conversion optimization.",
   },
   {
     q: 'Why Sanity CMS over Contentful or others?',
@@ -29,11 +29,11 @@ const faqs = [
   },
   {
     q: 'What if our site is large or has complex integrations?',
-    a: "The $2,000 covers most B2B SaaS sites (up to ~50 pages). For larger sites with complex multi-language setups, custom CRM integrations, or gated content systems, I'll give you a custom quote after the audit. Still very competitive vs. agencies charging $50K+.",
+    a: "The standard package covers most B2B SaaS sites (up to ~50 pages). For larger sites with complex multi-language setups, custom CRM integrations, or gated content systems, I'll scope a custom plan after the audit — still far more efficient than traditional agencies.",
   },
   {
-    q: 'How is this so much cheaper than agencies?',
-    a: "No office overhead, no project managers, no account executives. It's just me — a specialized developer who does this every day. You get the same composable stack (Astro + Sanity + Vercel) without the agency markup.",
+    q: 'How are you more efficient than agencies?',
+    a: "No office overhead, no project managers, no account executives. It's just me — a specialized developer who does this every day. You get the same composable stack (Astro + Sanity + Vercel) without the bloat and bottlenecks of a large team.",
   },
 ]
 
